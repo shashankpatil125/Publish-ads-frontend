@@ -7,7 +7,7 @@ function Navbar() {
         <div className='flex h-full px-12'>
             <Link to='/' className='font-bold my-auto text-2xl px-8'>Create Ad</Link>
             <Link to='/allads' className='font-bold my-auto text-2xl px-8'>All Ads</Link>
-            <p className='font-bold my-auto text-2xl px-8'>Guide</p>
+            <Link to='/guide' className='font-bold my-auto text-2xl px-8'>Guide</Link>
             <Link to='/test' className='font-bold my-auto text-2xl px-8'>Test</Link>            
         </div>
     </div>
