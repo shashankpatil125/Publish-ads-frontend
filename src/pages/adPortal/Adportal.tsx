@@ -35,6 +35,15 @@ function Adportal() {
         }
     };
 
+    const validateAndPost = ()=>{
+        if(title==='' || link ==='' || imageSrc === null || selected.length===0){
+            alert('Enter All Data')
+        }
+        else{
+            post()
+        }
+    }
+
     const post = async () => {
         let data = {
             title: title,
@@ -114,7 +123,7 @@ function Adportal() {
                 <input className='text-white text-center mx-auto px-auto mt-5' type="file" onChange={handleInputChange} />
             </div>
             {imageSrc == null ? null : (
-                <button className="bg-blue-600 w-1/12 my-5 py-2 rounded-md" onClick={post}>Submit</button>
+                <button className="bg-blue-600 w-1/12 my-5 py-2 rounded-md" onClick={validateAndPost}>Submit</button>
             )}
             {/* <button  onClick={getimg}>max</button> */}
             <p>{showtitle}</p>

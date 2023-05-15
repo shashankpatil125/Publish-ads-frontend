@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../../Components/Navbar'
 import img1 from '../../images/img1.png'
 import img2 from '../../images/img2.png'
+import img3 from '../../images/img3.png'
 
 
 export const Guide = () => {
@@ -22,6 +23,10 @@ export const Guide = () => {
             <p className='text-xl font-bold my-10'>Get one ad by tag :- that we can call api to anywhere  </p>
             <img className='mx-auto' src={img2}></img>
             <p className='py-5'>This code defines an asynchronous function called getad that uses the Axios library to make a GET request to a REST API endpoint. The URL for the GET request is constructed dynamically using the tag variable. When the request is successful, the data returned by the API is passed as an argument to a function that sets the value of a state variable called code. If the request fails, an error message is logged to the console.After the GET request has been sent, the function logs the current value of the code state variable to the console using console.log().</p>
+            <p className='text-xl font-bold my-10'>Get one ad without using any kind of tag :- that we can call api to anywhere  </p>
+            <img className='mx-auto' src={img3}></img>
+            <p className='py-5 text-center'>This code is for get a Random ad from the Database to display it at any Frontend. api url is http://localhost:3000/getOneAd it sends the random ad from the database as a responce</p>
+
             </div>
     </div>
   )
